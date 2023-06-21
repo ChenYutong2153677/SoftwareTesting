@@ -1,7 +1,7 @@
 <template>
   <div class="unittest">
     <el-row>
-      <h1 style="font-size: 18px" >单元测试</h1>
+      <h1 style="font-size: 18px" >回归测试</h1>
     </el-row>
     <el-row style="display: flex;">
       <div>
@@ -36,20 +36,28 @@ export default {
     return {
       options: [
         {
-          value: "http://localhost:8090/test/unit",
+          value: "http://localhost:8090/test/regression",
           label: "高校机构微服务",
         },
         {
-          value: "http://localhost:8083/test/unit",
+          value: "http://localhost:8083/test/regression",
           label: "个人中心微服务",
         },
         {
-          value: "http://localhost:8081/test/unit",
+          value: "http://localhost:8081/test/regression",
           label: "登陆注册微服务",
         },
         {
-          value: "http://localhost:8093/test/unit",
+          value: "http://localhost:8093/test/regression",
           label: "动态微服务",
+        },
+        {
+          value: "http://localhost:8101/test/regression",
+          label: "AI微服务",
+        },
+        {
+          value: "http://localhost:8082/test/regression",
+          label: "问答微服务",
         },
       ],
       selected: "",

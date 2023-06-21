@@ -9,7 +9,7 @@ import UnitTest from '../views/UnitTest';
 import Layout from '../components/Layout';
 import ComputerSalesSystem from '../views/ComputerSalesSystem';
 import IntegrationTest from '../views/IntegrationTest';
-import SystemTest from '../views/SystemTest';
+import RegressionTest from '../views/RegressionTest';
 
 Vue.use(VueRouter)
 
@@ -62,9 +62,9 @@ const router = new VueRouter({
           component:IntegrationTest,
         },
         {
-          path:'/systemtest',
-          name:'SystemTest',
-          component:SystemTest,
+          path:'/regressiontest',
+          name:'RegressionTest',
+          component:RegressionTest,
         }
       ],
       meta:{
