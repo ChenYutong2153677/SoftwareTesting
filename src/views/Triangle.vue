@@ -57,22 +57,22 @@
           <el-table-column
               prop=1
               label="第一条边"
-              width="180">
+              width="170">
           </el-table-column>
           <el-table-column
               prop=2
               label="第二条边"
-              width="180">
+              width="170">
           </el-table-column>
           <el-table-column
               prop=3
               label="第三条边"
-              width="180">
+              width="170">
           </el-table-column>
           <el-table-column
               prop=4
               label="预期输出"
-              width="180">
+              width="170">
           </el-table-column>
           <el-table-column
               prop=5
@@ -85,8 +85,12 @@
           <el-table-column
               prop=7
               label="是否通过测试">
+              <template v-slot="scope">
+                  <div :style="{ color: scope.row[7] === '通过' ? 'green' : 'red' }">
+                      {{ scope.row[7] }}
+                  </div>
+              </template>
           </el-table-column>
-
         </el-table>
     </div>
     </el-footer>
@@ -121,13 +125,13 @@ export default {
           this.$message.warning ("第二条边不能为0")
       if (c < 0)
           this.$message.warning ("第三条边不能为0")
-      if (a > 800)
+      if (a > 100)
           this.$message.warning ("第一条边超出了边界")
-      if (b > 800)
+      if (b > 100)
           this.$message.warning ("第二条边超出了边界")
-      if (c > 800)
+      if (c > 100)
           this.$message.warning ("第三条边超出了边界")
-      if(a>0 && a<=800 && b>0 && b<=800 && c>0 && c<=800){
+      if(a>0 && a<=100 && b>0 && b<=100 && c>0 && c<=100){
         if (a + c > b && a + b > c && b + c > a)
         {
           if (a == b && b == c)
