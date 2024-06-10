@@ -15,6 +15,7 @@
 
                         <el-menu-item index="/triangle"><i class="el-icon-s-promotion"></i>三角形问题</el-menu-item>
                         <el-menu-item index="/telecom"><i class="el-icon-money"></i>电信收费问题</el-menu-item>
+                        <el-menu-item index="/sales"><i class="el-icon-money"></i>销售系统员工考评</el-menu-item>
                         <el-menu-item index="/computer"><i class="el-icon-s-platform"></i>电脑销售系统</el-menu-item>
                         <el-menu-item index="/calendar"><i class="el-icon-date"></i>万年历问题</el-menu-item>
 
