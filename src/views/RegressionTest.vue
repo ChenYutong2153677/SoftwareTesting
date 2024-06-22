@@ -36,8 +36,8 @@ export default {
     return {
       options: [
         {
-          value: "http://localhost:8090/test/regression",
-          label: "高校机构微服务",
+          value: "http://localhost:18085/test/regression",
+          label: "健康资讯微服务",
         },
         {
           value: "http://localhost:8083/test/regression",
