@@ -10,6 +10,10 @@ html,body{
   margin:0;
   width:100%;
 }
+h1{
+  font-size: 24px;
+  color: #409eff;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

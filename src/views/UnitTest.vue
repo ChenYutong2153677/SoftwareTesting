@@ -1,7 +1,7 @@
 <template>
   <div class="unittest">
     <el-row>
-      <h1 style="font-size: 18px" >单元测试</h1>
+      <h1 >单元测试</h1>
     </el-row>
     <el-row style="display: flex;">
       <div>

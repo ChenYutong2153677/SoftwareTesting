@@ -2,7 +2,7 @@
 
  <div class='container'>
    <el-container>
-    <h1 style="font-size:18px" class="header">判断三角形类型</h1>
+    <h1 class="header">判断三角形类型</h1>
 
     <el-footer>
        <el-tabs type="border-card" style="width: 50%; height: 350px">

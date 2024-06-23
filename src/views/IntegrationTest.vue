@@ -1,7 +1,7 @@
 <template>
   <div class="unittest">
     <el-row>
-      <h1 style="font-size: 18px">集成测试</h1>
+      <h1>集成测试</h1>
     </el-row>
     <el-row style="display: flex">
       <div style="font-size: 18px; margin-top: 7px; margin-right: 15px">
