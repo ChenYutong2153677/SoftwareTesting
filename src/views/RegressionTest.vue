@@ -63,6 +63,10 @@ export default {
           value: "http://localhost:8082/test/regression",
           label: "问答微服务",
         },
+        {
+          value: "http://localhost:18083/test/unit",
+          label: "日历提醒微服务",
+        },
       ],
       selected: "",
       tableData: [],
