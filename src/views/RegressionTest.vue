@@ -40,6 +40,10 @@ export default {
           label: "健康资讯微服务",
         },
         {
+          value: "http://localhost:18087/test/regression",
+          label: "药品信息微服务",
+        },
+        {
           value: "http://localhost:8083/test/regression",
           label: "个人中心微服务",
         },
