@@ -51,6 +51,10 @@ export default {
           value: "http://localhost:8093/test/unit",
           label: "动态微服务",
         },
+        {
+          value: "http://localhost:18083/test/unit",
+          label: "日历提醒微服务",
+        },
       ],
       selected: "",
       tableData: [],
