@@ -1,29 +1,19 @@
 <template>
-  <div class="unittest">
+  <div class="regressionTest">
     <el-row>
       <h1>回归测试</h1>
     </el-row>
     <el-row style="display: flex;">
       <div>
-      <el-select
-        v-model="selected"
-        class="m-2"
-        placeholder="选择需要测试的微服务"
-        size="large"
-      >
-        <el-option
-          v-for="item in options"
-          :key="item.value"
-          :label="item.label"
-          :value="item.value"
-        />
-      </el-select>
-    </div>
+        <el-select v-model="selected" class="m-2" placeholder="选择需要测试的微服务" size="large">
+          <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value" />
+        </el-select>
+      </div>
 
-      <el-button type="primary" style="margin-left: 15px;height: 40px;" @click="unitTesting"
-        >进行测试</el-button
-      >
+      <el-button type="primary" style="margin-left: 15px;height: 40px;" @click="unitTesting">进行测试</el-button>
     </el-row>
+    <br />
+    <iframe class="regressionAllure" id="regressionAllure" src=''></iframe>
   </div>
 </template>
 
@@ -85,7 +75,15 @@ export default {
         })
         .catch((errMsg) => {
           console.log(errMsg);
-          console.log("预测失败");
+          console.log("测试失败");
+        })
+        .finally(() => {
+          console.log("测试结束");
+          document.getElementById('regressionAllure').src = 'http://100.80.136.121:1688/index.html';
+          setTimeout(function () {
+            // 尝试刷新 iframe 内容
+            document.getElementById('regressionAllure').contentWindow.location.reload(true);
+          }, 1000); // 等待 1 秒后尝试刷新
         });
     },
   },
@@ -93,4 +91,8 @@ export default {
 </script>
 
 <style scoped>
+.regressionAllure {
+  width: 70vw;
+  height: 70vh;
+}
 </style>
