@@ -5,7 +5,7 @@
 
       <el-footer>
         <div class="top">
-          <el-tabs type="border-card" style="width: 50%; height: min-content">
+          <el-tabs v-model="activeName" type="border-card" style="width: 50%; height: min-content">
             <el-tab-pane label="单次测试" name="first">
               <el-form ref="form" :model="form" label-width="120px" class="input-form">
                 <el-form-item label="第一条边 [1, 100]" class="input-text">
@@ -137,7 +137,8 @@ export default {
           label: '不构成三角形'
         }],
       value: '',
-      pieChart: null
+      pieChart: null,
+      activeName: 'first'
     }
   },
   mounted() {
